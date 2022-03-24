@@ -38,7 +38,7 @@ function App() {
                     return (
 
                         <div className="list" key={i}>
-                            <h3
+                            <h3  
                                 onClick={() => {
                                     setNum(i)
                                 }}>{a} 
