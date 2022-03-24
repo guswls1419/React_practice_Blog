@@ -77,11 +77,11 @@ function App() {
                         ? setModal(false)
                         : setModal(true)
                 }}>OPEN</button>
-
+   
             {
                 modal === true
-                    ? <Modal name={name} num={num}/> // name을 현재 map함수로 돌리고 있기때문에 num(name의 index번호)값도
-                    : null                           // 같이 지정해주어야 값이 노출된다.
+                    ? <Modal name={name} num={num}/> // name을 현재 map함수로 돌리고 있기때문에 props로 보내는 파라미터 값을
+                    : null                           // num(name의 index번호)값도 같이 지정해주어야 값이 노출된다.
             }
 
             {/* <button onClick={ ()=>{ modal변경(!modal) } }> 열고닫는버튼 </button> 
